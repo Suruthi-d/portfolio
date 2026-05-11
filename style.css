@@ -588,6 +588,23 @@ img { max-width: 100%; display: block; }
   border: 1px solid rgba(255,255,255,0.15);
   color: rgba(255,255,255,0.8);
 }
+.project-links{
+  margin-top: 18px;
+}
+
+.project-links a{
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #111;
+  transition: 0.3s ease;
+}
+
+.project-links a:hover{
+  opacity: 0.6;
+}
+
 
 /* === CERTIFICATIONS === */
 .certs-grid {
