@@ -368,34 +368,68 @@ img { max-width: 100%; display: block; }
   margin-bottom: 24px;
 }
 
+/* ===== ABOUT TOOLS ===== */
+
+.about-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.tools-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: #121212;
+  margin-bottom: 6px;
+}
+
 .tools-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
 }
 
 .tool-chip {
-  padding: 8px 16px;
-  border-radius: 50px;
-  font-size: 0.85rem;
+  padding: 10px 20px;
+  border: 1px solid #E2DED9;
+  border-radius: 999px;
+  background: #FAF8F5;
+  color: #4F4F4F;
+  font-size: 0.95rem;
   font-weight: 500;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  color: var(--ink-light);
-  transition: all 0.2s;
-}
-
-.tool-chip.primary {
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  color: var(--accent);
-  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .tool-chip:hover {
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  color: var(--accent);
+  transform: translateY(-2px);
+  border-color: #C2703E;
+  color: #C2703E;
+}
+
+.tool-chip.primary {
+  border-color: #C2703E;
+  color: #C2703E;
+  background: #FFF7F1;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .tools-heading {
+    font-size: 1.7rem;
+  }
+
+  .tool-chip {
+    font-size: 0.88rem;
+    padding: 9px 16px;
+  }
 }
 
 /* === SKILLS === */
