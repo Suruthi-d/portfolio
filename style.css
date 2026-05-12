@@ -843,6 +843,8 @@ body:hover .cursor { opacity: 1; }
   padding: 16px;
   opacity: 0;
   transition: opacity 0.3s;
+
+  pointer-events: none;
 }
 
 .live-card:hover .live-card-overlay {
@@ -901,7 +903,10 @@ body:hover .cursor { opacity: 1; }
   line-height: 1.7;
   margin-bottom: 16px;
 }
-
+.live-card{
+  position: relative;
+  z-index: 1;
+}
 .live-stack {
   display: flex;
   flex-wrap: wrap;
